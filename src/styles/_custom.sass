@@ -1,0 +1,54 @@
+@use 'variables' as *
+.banner-principal-decorativo
+  &-1
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 68%
+    left: -10%
+    width: 20%
+  &-2
+    animation: float1 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 30%
+    right: 10%
+    width: 20%
+
+@keyframes float1
+  0%
+    transform: translateY(20px)
+  100%
+    transform: translateY(0px)
+
+.col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
+  flex: 0 0 auto !important
+  width: 58.33333333% !important
+.banner-principal__img
+  padding-bottom: 0 !important
+.banner-principal__row .banner-principal__img
+  width: 33%
+
+/**************************************************************/
+/*Media Queries*/  
+/**************************************************************/
+
+//// DESKTOP SMALL 1400--------------------------------------
+@media screen and (max-width: $bp-min-xxl)
+  .mb-cus
+    margin-bottom: 2em !important
+
+//// TABLET 992--------------------------------------
+@media screen and (max-width: $bp-max-md)
+  .mb-cus
+    margin-bottom: 2em !important
+  .col-lg-7.col-xxl-5.ps-4.ps-sm-5.py-4.py-sm-5.banner-principal__info
+    width: 90% !important
+
+//// TABLET MINI 768--------------------------------------
+@media screen and (max-width: $bp-min-md)
+  .mb-cus
+    margin-bottom: 2em !important
+
+//// MOBILE 576--------------------------------------
+@media screen and (max-width: $bp-min-sm)
+  .mb-cus
+    margin-bottom: 2em !important
