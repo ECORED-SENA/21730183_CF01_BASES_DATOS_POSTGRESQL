@@ -99,13 +99,11 @@
                   span.dot.green
                 pre.ajuste___pre_1
                   code(v-pre).
-                    {
-                      # Comandos estándar para la administración del servicio PostgreSQL
-                      systemctl start postgresql    # Inicializa el motor y el proceso maestro de escucha
-                      systemctl stop postgresql     # Detiene el servicio de forma segura liberando memoria
-                      systemctl restart postgresql  # Aplica un reinicio completo del clúster de datos
-                      systemctl status postgresql   # Audita el estado actual y los últimos eventos del servicio
-                    }
+                    # Comandos estándar para la administración del servicio PostgreSQL
+                    systemctl start postgresql    # Inicializa el motor y el proceso maestro de escucha
+                    systemctl stop postgresql     # Detiene el servicio de forma segura liberando memoria
+                    systemctl restart postgresql  # Aplica un reinicio completo del clúster de datos
+                    systemctl status postgresql   # Audita el estado actual y los últimos eventos del servicio
           p.mb-5 El dominio de estas utilidades facilita la administración cotidiana del servidor y constituye una competencia fundamental para la operación de entornos de desarrollo y producción.
       .titles___box_tercer_nivel.mb-5(data-aos="fade-right")
         .col-lg-auto
