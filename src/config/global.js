@@ -2,7 +2,7 @@ export default {
   global: {
     Name: 'Planificación e implementación de bases de datos relacionales en PostgreSQL',
     Description:
-      'Este componente formativo proporciona los fundamentos teóricos, arquitectónicos y prácticos necesarios para concebir, planificar y desplegar infraestructuras de almacenamiento de datos robustas. El aprendiz asimilará desde la abstracción de reglas de negocio en modelos conceptuales, hasta la instalación física y estructuración técnica de objetos relacionales utilizando el motor de código abierto PostgreSQL.',
+      'Este componente formativo proporciona los fundamentos teóricos, arquitectónicos y prácticos necesarios para concebir, planificar y desplegar infraestructuras de almacenamiento de datos robustas. El aprendiz asimilará desde la abstracción de reglas de negocio en modelos conceptuales hasta la instalación física y estructuración técnica de objetos relacionales utilizando el motor de código abierto PostgreSQL.',
     imagenBannerPrincipal: '@/assets/curso/portada/banner-principal.png',
     fondoBannerPrincipal: '@/assets/curso/portada/fondo-banner-principal.png',
     imagenesDecorativasBanner: [

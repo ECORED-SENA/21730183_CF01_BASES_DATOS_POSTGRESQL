@@ -116,7 +116,7 @@
                 .row(titulo="Inicialización y escucha").ajuste-cajaAcordion.ajuste-vineta
                   p.mb-3 Al iniciar el servicio, el proceso maestro postgres se carga en memoria, asigna los segmentos de memoria compartida y entra en estado de escucha sobre un puerto de red específico, que de forma predeterminada corresponde al #[b 5432].
                 .row(titulo="Creación de procesos (<i>forking</i>)").ajuste-cajaAcordion.ajuste-vineta
-                  p.mb-3 Cuando una aplicación cliente, como un sistema de facturación o una interfaz gráfica, solicita una conexión, el proceso maestro valida las credenciales de acceso. Si la autenticación es correcta, ejecuta una operación de fork, mediante la cual crea un proceso hijo independiente (#[i backend process]) dedicado exclusivamente a atender esa conexión.
+                  p.mb-3 Cuando una aplicación cliente, como un sistema de facturación o una interfaz gráfica, solicita una conexión, el proceso maestro valida las credenciales de acceso. Si la autenticación es correcta, ejecuta una operación de #[i fork], mediante la cual crea un proceso hijo independiente (#[i backend process]) dedicado exclusivamente a atender esa conexión.
                 .row(titulo="Aislamiento operativo").ajuste-cajaAcordion.ajuste-vineta
                   p.mb-3 La existencia de procesos independientes garantiza que, si uno de ellos presenta una falla ocasionada por una consulta incorrecta o un error de memoria, los demás procesos y el proceso maestro continúen funcionando sin interrupciones. Esta arquitectura constituye una de las principales razones de la estabilidad y confiabilidad de PostgreSQL en entornos empresariales.
                 .row(titulo="Finalización de la conexión").ajuste-cajaAcordion.ajuste-vineta
@@ -155,14 +155,14 @@
               .row.justify-content-center.align-items-center
                 .col-xl-6.mb-4
                   h4 ODBC (#[i Open Database Connectivity])
-                  p.mb-0 Constituye un estándar ampliamente utilizado para facilitar la interoperabilidad entre aplicaciones y motores de bases de datos. Es frecuente en entornos Windows y en aplicaciones desarrolladas en C++ y C#, además de herramientas de análisis de datos y suites ofimáticas.
+                  p.mb-0 Constituye un estándar ampliamente utilizado para facilitar la interoperabilidad entre aplicaciones y motores de bases de datos. Es frecuente en entornos Windows y en aplicaciones desarrolladas en C++ y C#, además de herramientas de análisis de datos y #[i suites] ofimáticas.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/t1/img14.svg', alt='' style="max-width: 500px").m-auto
               .row.justify-content-center.align-items-center
                 .col-xl-6.mb-4
                   h4 Controladores nativos modernos
-                  p.mb-0 Diversos lenguajes incorporan bibliotecas optimizadas que se comunican directamente con el protocolo nativo de PostgreSQL (#[i Frontend/Backend Protocol] v3.0). Entre ellas se encuentran #[b PDO_PGSQL] para PHP, #[b pg] para Node.js (JavaScript y TypeScript) y bibliotecas como #[b psycopg2] o #[b asyncpg] para Python, ampliamente utilizadas en desarrollo web, ciencia de datos y aplicaciones de alto rendimiento.
+                  p.mb-0 Diversos lenguajes incorporan bibliotecas optimizadas que se comunican directamente con el protocolo nativo de PostgreSQL (#[i Frontend/Backend Protocol] v3.0). Entre ellas se encuentran #[b PDO_PGSQL] para PHP, #[b pg] para #[i Node.js] (#[i JavaScript] y #[i TypeScript]) y bibliotecas como #[b #[i psycopg2]] o #[b #[i asyncpg]] para #[i Python], ampliamente utilizadas en desarrollo web, ciencia de datos y aplicaciones de alto rendimiento.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/t1/img15.png', alt='' style="max-width: 500px").m-auto
@@ -199,7 +199,7 @@
               .row.justify-content-center.align-items-center
                 .col-xl-6.mb-4
                   h4 Creación de versiones de tuplas
-                  p.mb-0 Cuando una instrucción #[b UPDATE] modifica una fila, PostgreSQL no sobrescribe el registro original. En su lugar, marca la tupla existente como obsoleta y crea una nueva versión con los datos actualizados, registrando la información necesaria para controlar su visibilidad.
+                  p.mb-0 Cuando una instrucción #[b #[i UPDATE]] modifica una fila, PostgreSQL no sobrescribe el registro original. En su lugar, marca la tupla existente como obsoleta y crea una nueva versión con los datos actualizados, registrando la información necesaria para controlar su visibilidad.
                 .col-xl-6
                   figure
                     img(src='@/assets/curso/temas/t1/img19.png', alt='' style="max-width: 500px").m-auto
@@ -301,7 +301,7 @@
       .row.align-items-center.mb-5
         .col-xl
           .box___style_1.color___2.fit___box_2(data-aos="flip-up")
-            p.mb-0 El ecosistema de PostgreSQL ha contado históricamente con diversas herramientas de administración. Entre ellas se encuentran #[b pgAccess y Database Master], aplicaciones de escritorio diseñadas para administrar esquemas y manipular datos en equipos con recursos de hardware limitados. Aunque actualmente su uso ha disminuido frente a herramientas más modernas, su estudio permite comprender la evolución de las interfaces de administración y la interacción con el catálogo interno del sistema.
+            p.mb-0 El ecosistema de PostgreSQL ha contado históricamente con diversas herramientas de administración. Entre ellas se encuentran #[b pgAccess y #[i Database Master]], aplicaciones de escritorio diseñadas para administrar esquemas y manipular datos en equipos con recursos de hardware limitados. Aunque actualmente su uso ha disminuido frente a herramientas más modernas, su estudio permite comprender la evolución de las interfaces de administración y la interacción con el catálogo interno del sistema.
         .col-xl-auto.d-none.d-xl-block(data-aos="zoom-in")
           figure
             img(src='@/assets/curso/temas/t1/img29.svg', alt='' style="width: 185px").m-auto
@@ -330,7 +330,7 @@
 </template>
 
 <script>
-import audio1 from '@/assets/curso/temas/t1/audios/audio-ej.mp3'
+import audio1 from '@/assets/curso/temas/t1/audios/Sistema_Manejador _Bases_Datos.mp3'
 export default {
   name: 'Tema1',
   data: () => ({

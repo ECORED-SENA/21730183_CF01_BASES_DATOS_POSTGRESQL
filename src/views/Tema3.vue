@@ -32,13 +32,13 @@
       .row.justify-content-center.align-items-center.mb-5
         .col-xl.mb-4.mb-lg-0
           .box___style_3.fit___box_1(data-aos="fade-right")
-            p.mb-0 La instalación de PostgreSQL en un entorno empresarial requiere una evaluación previa del sistema operativo. Entre las plataformas más utilizadas se encuentran distribuciones Linux como #[b Rocky Linux], #[b Ubuntu Server] y #[b Red Hat Enterprise Linux].
+            p.mb-0 La instalación de PostgreSQL en un entorno empresarial requiere una evaluación previa del sistema operativo. Entre las plataformas más utilizadas se encuentran distribuciones #[i Linux] como #[b #[i Rocky Linux]], #[b #[i Ubuntu Server]] y #[b #[i Red Hat Enterprise Linux]].
         .col-xl-auto.col-md-9.mb-4.mb-lg-0(data-aos="zoom-in")
           figure
             img(src='@/assets/curso/temas/t3/img3.jpg', alt='' style="width: 300px").m-auto
         .col-xl
-          p.mb-0 Antes de iniciar el proceso de instalación mediante el gestor de paquetes correspondiente, es recomendable preparar el entorno de ejecución. Una de las prácticas más importantes consiste en crear un usuario exclusivo del sistema operativo, habitualmente denominado #[b postgres], evitando que el servicio se ejecute con privilegios del usuario #[b root], ya que esta configuración representa un riesgo para la seguridad del sistema.
-      p.mb-5 La infraestructura de almacenamiento también influye de manera directa en el rendimiento del servidor. La selección del sistema de archivos determina, entre otros aspectos, la velocidad de escritura del mecanismo #[b Write-Ahead Logging (WAL)] y la capacidad de recuperación ante fallos inesperados. Las principales recomendaciones para la infraestructura de almacenamiento se resumen a continuación:
+          p.mb-0 Antes de iniciar el proceso de instalación mediante el gestor de paquetes correspondiente, es recomendable preparar el entorno de ejecución. Una de las prácticas más importantes consiste en crear un usuario exclusivo del sistema operativo, habitualmente denominado #[b #[i postgres]], evitando que el servicio se ejecute con privilegios del usuario #[b root], ya que esta configuración representa un riesgo para la seguridad del sistema.
+      p.mb-5 La infraestructura de almacenamiento también influye de manera directa en el rendimiento del servidor. La selección del sistema de archivos determina, entre otros aspectos, la velocidad de escritura del mecanismo #[b #[i Write-Ahead Logging (WAL)]] y la capacidad de recuperación ante fallos inesperados. Las principales recomendaciones para la infraestructura de almacenamiento se resumen a continuación:
       .bg___color_1
         .px-5
           .row.justify-content-center.mb-5
@@ -49,7 +49,7 @@
                     figure(data-aos="fade-right")
                       img(src='@/assets/curso/temas/t3/img4.svg', alt="" style="max-width: 90px").m-auto
                   h4.text-center Sistema operativo
-                  p.mb-0.text-center Utilizar distribuciones Linux orientadas a servidores, como Rocky Linux, Ubuntu Server o Red Hat Enterprise Linux, por su estabilidad y soporte empresarial.
+                  p.mb-0.text-center Utilizar distribuciones #[i Linux] orientadas a servidores, como #[i Rocky Linux], #[i Ubuntu Server] o #[i Red Hat Enterprise Linux], por su estabilidad y soporte empresarial.
             .col-xl-3.col-md-9.mt-4.mb-4.mb-lg-0(data-aos="zoom-in")
               .card___icon_out.h-100
                 .row.justify-content-center
@@ -57,7 +57,7 @@
                     figure(data-aos="fade-right")
                       img(src='@/assets/curso/temas/t3/img5.svg', alt="" style="max-width: 90px").m-auto
                   h4.text-center Usuario del servicio
-                  p.mb-0.text-center Crear un usuario dedicado denominado #[b postgres] para ejecutar el motor de bases de datos sin privilegios de superusuario.
+                  p.mb-0.text-center Crear un usuario dedicado denominado #[b #[i postgres]] para ejecutar el motor de bases de datos sin privilegios de superusuario.
             .col-xl-3.col-md-9.mt-4.mb-4.mb-lg-0(data-aos="zoom-in")
               .card___icon_out.h-100
                 .row.justify-content-center
@@ -89,7 +89,7 @@
             .col-xl-auto.d-none.d-xl-block(data-aos="zoom-in")
               figure
                 img(src='@/assets/curso/temas/t3/img8.png', alt='' style="width: 400px").m-auto
-          p.mb-5 Posteriormente, el control del servicio se delega al administrador de servicios del sistema operativo, como #[b systemd] en Linux, desde donde es posible iniciar, detener, reiniciar y verificar el estado del servidor. Los comandos esenciales para administrar el ciclo de vida del servicio se presentan en el siguiente recuadro: 
+          p.mb-5 Posteriormente, el control del servicio se delega al administrador de servicios del sistema operativo, como #[b systemd] en #[i Linux], desde donde es posible iniciar, detener, reiniciar y verificar el estado del servidor. Los comandos esenciales para administrar el ciclo de vida del servicio se presentan en el siguiente recuadro: 
           .row.justify-content-center.mb-5
             .col-xl-10
               .code-window(data-aos="zoom-in")
@@ -111,7 +111,7 @@
             img(src="@/assets/curso/temas/t1/img3.png" style="max-width: 60px").m-auto
         .col
           h3 Instalación en Windows
-      p.mb-5 Además de los entornos Linux, PostgreSQL dispone de instaladores oficiales para el sistema operativo Windows, los cuales automatizan gran parte del proceso de instalación y configuración inicial. A continuación, se presenta un recurso audiovisual que explica paso a paso el procedimiento para instalar PostgreSQL en Windows, realizar la configuración inicial y ejecutar los primeros comandos mediante la consola #[b psql].
+      p.mb-5 Además de los entornos #[i Linux], PostgreSQL dispone de instaladores oficiales para el sistema operativo Windows, los cuales automatizan gran parte del proceso de instalación y configuración inicial. A continuación, se presenta un recurso audiovisual que explica paso a paso el procedimiento para instalar PostgreSQL en Windows, realizar la configuración inicial y ejecutar los primeros comandos mediante la consola #[b psql].
       figure(data-aos="zoom-in").mb-5
         .video
           iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
@@ -149,7 +149,7 @@
                 figure.mb-4(data-aos="fade-right")
                   img(src='@/assets/curso/temas/t3/img11.png', alt="" style="max-width: 500px").m-auto
               h4.text-center Neon
-              p.mb-0 Implementa una arquitectura serverless para PostgreSQL que separa los recursos de cómputo del almacenamiento. Su plan gratuito permite crear instancias de manera rápida y suspende automáticamente los recursos de procesamiento cuando no existe actividad, optimizando el consumo de infraestructura.
+              p.mb-0 Implementa una arquitectura #[i serverless] para PostgreSQL que separa los recursos de cómputo del almacenamiento. Su plan gratuito permite crear instancias de manera rápida y suspende automáticamente los recursos de procesamiento cuando no existe actividad, optimizando el consumo de infraestructura.
         .col-xl-4.col-md-9.mb-4.mb-lg-0(data-aos="zoom-in")
           .card___icon.h-100
             .row.justify-content-center.mb-3
@@ -167,13 +167,13 @@
               h4.text-center Render
               p.mb-0 Plataforma en la nube que permite desplegar bases de datos PostgreSQL administradas junto con aplicaciones web. Sus planes gratuitos resultan adecuados para proyectos de formación, pruebas de integración y validación de aplicaciones conectadas a bases de datos relacionales.
       p.mb-5 La disponibilidad de estos servicios facilita el desarrollo de proyectos sin necesidad de administrar servidores físicos, reduciendo el tiempo requerido para poner en funcionamiento una infraestructura de bases de datos.
-      .titles___box_tercer_nivel.mb-5(data-aos="fade-right").fit___litles
+      .titles___box_tercer_nivel.mb-5(data-aos="fade-right").fit___litles_1
         .col-lg-auto
           figure
             img(src="@/assets/curso/temas/t1/img3.png" style="max-width: 60px").m-auto
         .col
           h3 Configuración de cadenas de conexión remotas, parámetros de latencia y herramientas de acceso seguro
-      p.mb-5 Para establecer comunicación con una base de datos alojada en la nube es necesario utilizar una #[b cadena de conexión] (#[i connection string]) o una URL de conexión. Este parámetro reúne la información necesaria para que el controlador de la aplicación local identifique y establezca comunicación con el servidor remoto.
+      p.mb-5 Para establecer comunicación con una base de datos alojada en la nube, es necesario utilizar una #[b cadena de conexión] (#[i connection string]) o una URL de conexión. Este parámetro reúne la información necesaria para que el controlador de la aplicación local identifique y establezca comunicación con el servidor remoto.
       .row.justify-content-center.mb-5
         .col-xl-10
           .box___style_4(data-aos="flip-up").text-white
